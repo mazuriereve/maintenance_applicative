@@ -2,6 +2,7 @@
 $host = "localhost"; // Serveur MySQL
 $dbname = "maintenance_applicative"; // Nom de la base de données
 $username = "root"; // Nom d'utilisateur MySQL
+$password = ""; // Nom d'utilisateur MySQL
 
 
 try {
