@@ -22,10 +22,8 @@ if (isset($_GET['logout'])) {
         <div class="header">
             <?php if ($isConnected): ?>
                 <a href="?logout=1" class="button">Se déconnecter</a>
-                <span class="status">Connecté</span>
             <?php else: ?>
                 <a href="login.php" class="button">Se connecter</a>
-                <span class="status">Non connecté</span>
             <?php endif; ?>
         </div>
         <div class="content">
