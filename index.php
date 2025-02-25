@@ -19,17 +19,18 @@ if (isset($_GET['logout'])) {
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container_main">
         <div class="header">
             <?php if ($isConnected): ?>
-                <a href="?logout=1" class="button">Se déconnecter</a>
+                <a href="?logout=1" class="button_login">Se déconnecter</a>
                 <span class="status">Bonjour, <?= htmlspecialchars($nom_user); ?> ! 👋</span>
             <?php else: ?>
-                <a href="login.php" class="button">Se connecter</a>
+                <a href="login.php" class="button_login">Se connecter</a>
                 <span class="status">Non connecté</span>
             <?php endif; ?>
         </div>
         <div class="content">
+            <br><br>
             <h1>Bienvenue sur la page d'accueil !</h1>
             <p>Ceci est une page basique avec un bouton de connexion.</p>
         </div>
