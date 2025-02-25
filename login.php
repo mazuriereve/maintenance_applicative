@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <h2>Connexion</h2>
         <?= $message; ?> <!-- Affichage du message d'erreur ou de succès -->
         <form action="" method="POST">
-            <input type="email" name="email_user" placeholder="Email" required> <!-- Champ email (inutile ici) -->
+            <input type="email" name="email_user" placeholder="Email"> <!-- Champ email -->
             <input type="password" name="mdp" placeholder="Mot de passe" required> <!-- Champ mot de passe -->
             <button type="submit">Se connecter</button> <!-- Bouton de connexion -->
         </form>
