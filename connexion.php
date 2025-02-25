@@ -1,18 +1,13 @@
 <?php
-// Informations de connexion à la base de données
-$host = ""; // Remplacez par l'hôte de votre serveur MySQL
-$dbname = "";
-$user = "";
-$password = "";
-
-// Chaîne de connexion à la base de données
-$dsn = "mysql:host=$host;dbname=$dbname;user=$user;password=$password";
-
+$host = "localhost"; // Serveur MySQL
+$dbname = "maintenance_applicative"; // Nom de la base de données
+$username = "root"; // Nom d'utilisateur MySQL
+$password = "root"; // Mot de passe MySQL (laisser vide sous XAMPP)
 
 try {
-    // Connexion à la base de données
-    $db = new PDO($dsn);
+    $pdo = new PDO("mysql:host=$host;dbname=$dbname;charset=utf8", $username, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $e) {
-    echo "Database connection failed: " . $e->getMessage();
-    die();
+    die("Erreur de connexion : " . $e->getMessage());
 }
+?>
