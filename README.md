@@ -6,7 +6,8 @@
 Ce projet a été réalisé dans le but de créer un site simple permettant aux utilisateurs de se connecter à l'aide de leurs identifiants. L'objectif principal de ce projet était d'identifier et de résoudre deux problèmes spécifiques :
 
 1. **Un défaut de mise en page** 
-2. **Une faille de sécurité** 
+2. **Une faille de sécurité** : dans le système de connexion de l'utilisateur
+   
 
 ### Date de réalisation :
 - **Date** : 25 février 2025
